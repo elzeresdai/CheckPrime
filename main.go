@@ -15,7 +15,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	// Routes
-	e.POST("/", internal.CheckPrimes)
+	e.POST("/check", internal.CheckPrimes)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":8070"))
